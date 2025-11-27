@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ANISHA MIRANDA | Cybersecurity Portfolio</title>
+
+  <!-- Correct Flask static path -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>ANISHA MIRANDA</h1>
+    <p class="typewriter">Cybersecurity | Cloud Security | Digital Forensic | Vulnerability Assessment</p>
+    <p>
+      <a href="mailto:anishamiranda1624@gmail.com">anishamiranda1624@gmail.com</a> · 
+      <a href="tel:+91-7758900948">+91-7758900948</a> · 
+      <a href="https://www.linkedin.com/in/anisha-miranda/" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- About Me -->
+    <div class="card slide-left animate-delay-1">
+      <h2>ABOUT ME</h2>
+      <p>Final-year B.Tech student specializing in Cybersecurity, passionate about solving real-world challenges through cloud infrastructure, system administration, and digital forensics.</p>
+    </div>
+
+  <!-- Internship Experience -->
+<div class="card internship-container">
+  <h2>INTERNSHIP EXPERIENCE</h2>
+  
+  <div class="internship-grid">
+    <div class="internship-card">
+      <h3>BloggersCon Vision</h3>
+      <p>Used 
+        <span class="tooltip">Subfinder<span class="tooltiptext">Tool for discovering subdomains</span></span>, 
+        <span class="tooltip">dnsx<span class="tooltiptext">DNS resolution and probing tool</span></span>, 
+        <span class="tooltip">Naabu<span class="tooltiptext">Fast port scanner</span></span>, 
+        <span class="tooltip">ffuf<span class="tooltiptext">Web fuzzing tool for directories and files</span></span>. 
+        Created bash scripts to streamline scanning and documented findings in structured reports.
+      </p>
+    </div>
+
+    <div class="internship-card">
+      <h3>Hacksecure</h3>
+      <p>Penetration testing with 
+        <span class="tooltip">Hydra<span class="tooltiptext">Login brute-force tool</span></span>, 
+        <span class="tooltip">Gobuster<span class="tooltiptext">Directory and DNS brute-forcing</span></span>; 
+        traffic analysis with 
+        <span class="tooltip">Wireshark<span class="tooltiptext">Network packet inspection</span></span>. 
+        Delivered vulnerability assessments and remediation strategies.
+      </p>
+    </div>
+
+    <div class="internship-card">
+      <h3>Cyber Security Corporation</h3>
+      <p>Digital forensics and incident response using Linux-based tools for disk imaging and log analysis.</p>
+    </div>
+
+    <div class="internship-card">
+      <h3>ARAPL Pvt. Ltd.</h3>
+      <p>Vulnerability scanning with Nessus and OpenVAS. Participated in red team simulations and CVE documentation.</p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Certificates -->
+<div class="card fade-in animate-delay-4">
+  <h2>CERTIFICATES</h2>
+
+  <div class="certificate-grid">
+
+    <!-- Box 1 -->
+    <div class="certificate-box">
+      <img src="{{ url_for('static', filename='certificates/isc2_cc.png') }}" class="cert-img" alt="ISC2 CC Certificate">
+      <h3>ISC2 – Certified in Cybersecurity (CC)</h3>
+      <p>Issued by: ISC2</p>
+      <a href="{{ url_for('static', filename='certificates/isc2_cc.png') }}" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="certificate-box">
+      <img src="{{ url_for('static', filename='certificates/osint.png') }}" class="cert-img" alt="OSINT Certificate">
+      <h3>OSINT Certification</h3>
+      <p>Issued by: Udemy</p>
+      <a href="{{ url_for('static', filename='certificates/osint.png') }}" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="certificate-box">
+      <img src="{{ url_for('static', filename='certificates/aws_completion.png') }}" class="cert-img" alt="AWS Completion Certificate">
+      <h3>AWS Solution Architect</h3>
+      <p>Issued by: SevenMentors</p>
+      <a href="{{ url_for('static', filename='certificates/aws_completion.png') }}" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="certificate-box">
+      <img src="{{ url_for('static', filename='certificates/aws-certified-solutions-architect-associate.png') }}" class="cert-img" alt="AWS Solutions Architect Certificate">
+      <h3>AWS Solutions Architect</h3>
+      <p>Issued by: AWS</p>
+      <a href="{{ url_for('static', filename='certificates/aws-certified-solutions-architect-associate.png') }}" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+  </div>
+</div>
+ 
+    <!-- Projects -->
+<div class="card fade-in animate-delay-4">
+  <h2>PROJECTS</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Malware Detection System</h3>
+      <p>Identifies malicious software using custom logic.</p>
+      <div class="tool-tags">
+        <span class="tool-tag" onclick="showPopup('python')">Python</span>
+        <span class="tool-tag" onclick="showPopup('nmap')">Nmap</span>
+      </div>
+      <a href="https://github.com/Anisha0801/Malware-Detection.git" target="_blank" class="tool-link">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Proxy Scraper & Generator</h3>
+      <p>Automated tool for scraping and testing proxies.</p>
+      <div class="tool-tags">
+        <span class="tool-tag" onclick="showPopup('python')">Python</span>
+        <span class="tool-tag" onclick="showPopup('bash')">Bash</span>
+      </div>
+      <a href="https://github.com/Anisha0801/Proxy-Scraper-Generator-Tool.git" target="_blank" class="tool-link">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>TSCM Surveillance Detection</h3>
+      <p>Contributed to a TSCM (Technical Surveillance Countermeasures) project by researching and identifying hardware and software tools.</p>
+      <div class="tool-tags">
+        <span class="tool-tag" onclick="showPopup('wireshark')">Wireshark</span>
+        <span class="tool-tag" onclick="showPopup('hydra')">Hydra</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>WordPress Hosting on AWS</h3>
+      <p>Scalable WordPress setup using EC2, RDS, S3, and IAM.</p>
+      <div class="tool-tags">
+        <span class="tool-tag" onclick="showPopup('aws')">AWS</span>
+        <span class="tool-tag" onclick="showPopup('linux')">Linux</span>
+      </div>
+      <a href="https://github.com/Anisha0801/WordPress-AWS-Hosting.git" target="_blank" class="tool-link">View on GitHub</a>
+    </div>
+
+    <!-- ⭐ FIXED: Compliance IoT Scanner is now INSIDE project-grid -->
+    <div class="project-card">
+      <h3>Compliance IoT Scanner</h3>
+      <p>MQTT, Ansible, Compliance Standards</p>
+      <div class="tool-tags">
+        <span class="tool-tag" onclick="showPopup('iot')">IoT</span>
+        <span class="tool-tag" onclick="showPopup('compliance')">Compliance</span>
+      </div>
+      <a href="https://github.com/Anisha0801/compliance-guardian-iot.git" target="_blank" class="tool-link">View on GitHub</a>
+    </div>
+
+  </div> <!-- END project-grid -->
+</div> <!-- END card -->
+
+    <!-- Skills -->
+    <div class="card slide-left animate-delay-5">
+      <h2>SKILLS</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>AWS</h3>
+          <p>EC2, S3, RDS, IAM</p>
+        </div>
+        <div class="skill-card">
+          <h3>Linux</h3>
+          <p>System Administration, Bash Scripting</p>
+        </div>
+        <div class="skill-card">
+          <h3>Windows</h3>
+          <p>Active Directory, Networking</p>
+        </div>
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Automation, Flask, Scripting</p>
+        </div>
+        <div class="skill-card">
+          <h3>Security Tools</h3>
+          <p>Nmap, Wireshark, Hydra, ZAP</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud Concepts</h3>
+          <p>VPC, Route 53, IAM Policies</p>
+        </div>
+      </div>
+    </div>
+
+   <!-- Education Section -->
+<div class="card fade-in animate-delay-4">
+  <h2>EDUCATION</h2>
+
+  <div class="edu-grid">
+
+    <!-- Box 1 -->
+    <div class="edu-card">
+      <div class="edu-inner">
+        <h3>B.Tech in Computer Science</h3>
+        <p><strong>Specialization:</strong> Cybersecurity</p>
+        <p>Symbiosis Skills & Professional University, Pune</p>
+        <p class="edu-year">2022 – 2026</p>
+        <p class="edu-grade">CGPA: 9.1</p>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="edu-card">
+      <div class="edu-inner">
+        <h3>12th Grade</h3>
+        <p>Kamalnayan Bajaj Higher Secondary School</p>
+        <p class="edu-year">2020 – 2022</p>
+        <p class="edu-grade">Percentage: 71%</p>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="edu-card">
+      <div class="edu-inner">
+        <h3>10th Grade</h3>
+        <p>St. Jude High School</p>
+        <p class="edu-year">2020</p>
+        <p class="edu-grade">Percentage: 86.20%</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+
+    <!-- Participation -->
+  <div class="participation-section">
+  <h2>PARTICIPATION</h2>
+
+  <div class="participation-cards">
+
+    <div class="participation-box">
+      <h3>CTF Challenges</h3>
+      <p>ByteBloggers<br>Kuban CTF<br>Tech Mumbai</p>
+    </div>
+
+    <div class="participation-box">
+      <h3>Hackathons</h3>
+      <p>IIT Kanpur<br>ByteBloggers<br>Nvidia AI</p>
+    </div>
+
+    <div class="participation-box">
+      <h3>Cybersecurity Bootcamps</h3>
+      <p>BloggersCon<br>Hacksecure</p>
+    </div>
+
+    <div class="participation-box">
+      <h3>Workshops</h3>
+      <p>Ethical Hacking<br>Cloud Security</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+  </main>
+
+  <footer>
+    <p>© Anisha Miranda</p>
+  </footer>
+
+</body>
+</html>
